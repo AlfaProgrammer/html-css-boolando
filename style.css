@@ -4,18 +4,19 @@
     padding: 0;
 }
 .container{
-    height: 1920px;
+    /* height: 1920px; */
     width: 1644px;
 }
 
 /* costruzione e spaziatura rettangoli */
 .first-row, .second-row{
-    padding: 30px 62px;
+    padding: 0 62px;
+    margin-top: 30px;
 }
 .rect{
     width: 483px;
     height: 765px;
-    background-color: #666;
+   
 }
 .middle{
     margin-left:30px;
@@ -35,6 +36,7 @@ img{
     width: 100%;
 }
 
+/* caratteristiche */
 .relative{
     position: relative;
 }
@@ -45,3 +47,64 @@ img{
     display: inline-block;
 }
 
+/* Cuoricino */
+.cuore{
+    height: 50px;
+    width: 50px;
+    background-color: aliceblue;
+    z-index: 6;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    right: 0;
+    top: 2.5%;
+}
+
+/* targe (sconto e altre) */
+.sconto{
+    background-color:#eb0037;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    z-index: 6; 
+    bottom: 15%;
+}
+.sostenibilita{
+    background-color: #00875a;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    z-index: 6; 
+    bottom: 15%;
+    left:10%;
+}
+.second-row .sostenibilita:nth-of-type(2){
+    left:0;
+}
+
+/* testo (descrizione e titolo) */
+.descrizione{
+    font-size: 15px;
+    color: #666;
+    bottom: 6%;
+    left: 1pt;
+    text-transform: capitalize;
+}
+.titolo{
+    bottom:3%;
+    text-transform: uppercase;
+}
+.prezzo{
+    color: #eb0037;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: 0.5%;
+    left: 1pt;
+}
+.prezzo>span{
+    color: black;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
