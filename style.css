@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    height: 1920px;
+    width: 1644px;
+}
+.rect{
+    width: 483px;
+    height: 765px;
+    background-color: #666;
+}
+
+.second-row, .first-row{
+    margin: 30px 219px;
+}
+.rect img:first-of-type{
+    z-index: 5;
+}
+.rect:hover>img:first-child{
+    visibility: hidden;
+}
+
+img{
+    max-height: 765px;
+    max-width: 483px;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.inline{
+    display: inline-block;
+}
+
+/* posizione degli elementi absolute rispetto al loro contenitore
+destinato alle card dei prodotti */
+.position{
+    left:105%
+}
